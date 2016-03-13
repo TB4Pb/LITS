@@ -1,0 +1,224 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face{
+	font-family: ZMonk;
+	src: url(../fonts/ZMonk.eot);
+	src: local(ZMonk), url(../fonts/ZMonk.ttf);
+}
+
+body{
+	background-image: url(../img/bg2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.col-md-3{
+	z-index:40;
+}
+
+.col-md-3 p{
+width:250;
+	background-image: url(../img/layer1.png);
+	background-repeat: no-repeat;
+	background-size: 90%;
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18.002px;
+	text-align: center;
+	margin-top: 30px;
+	padding-right: 25px;
+    padding-top: 3px;
+    margin-bottom: 60px;
+}
+
+
+.img777 {
+	height: 400px;
+	background-image: url(../img/777.png);
+	background-position:top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index:10;
+}
+.col-md-4{
+	z-index: 100;
+	height:400px;
+}
+
+.col-md-4 p{
+    margin-top: 18px;
+    line-height: 1.3em;
+	font-family: ZMonk;
+	-webkit-text-stroke: 2px black;
+	color:  #ffffff;
+	font-size: 40px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: left;
+}
+
+.col-md-4 span{
+	color: #f0b22e;
+	line-height: 1.5em;
+
+}
+
+.img-b{
+	margin-top: 16px;
+	height: 400px;
+	background-image: url(../img/pic1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.star p{
+	height:40px;
+	margin-top: 300px;
+	background-image: url(../img/star.png) ;
+	background-repeat: no-repeat;
+	background-position:left center;
+	background-size: 28%;
+	font-family: ZMonk;
+	padding-left: 50px;
+	color:  #fff;
+	font-size: 20px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	-webkit-text-stroke: 1px black;
+	line-height: 1.1em;
+	text-align: left;
+	z-index:1;
+	
+}
+
+.sendsubmit {
+	width:  300px;  // длина кнопки
+	height: 75px; // высота кнопки
+	margin: 0;
+	padding:0;
+	border: 0;
+	background: transparent url(../img/btn1.png) no-repeat center top;
+	background-size: 100%;
+	text-indent: -1000em;
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+.teg p {
+	color: #f0b22e;
+	padding-bottom: 22px;
+
+}
+
+.teg span{
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6em;
+	text-align: left;
+}
+
+.teg ul {
+    list-style-image: url(../img/plus1.png);
+    padding-top: 30px;
+    padding-left: 22px;
+   }
+
+.teg li{
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 2em;
+	text-align: left;
+}   
+
+.teg1 ul{
+	list-style-image: url(../img/star2.png);
+	padding-top: 0px;
+	padding-bottom: 20px;
+	
+
+}
+
+.teg1 span{
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6em;
+	text-align: left;
+	
+}
+
+.face1{
+	height: 130px;
+	width:130px;
+	background-image: url(../img/face1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float:left;
+	z-index:250;
+}
+
+.size p{
+	padding-bottom:0px;
+}
+
+
+.face2{
+	margin-top:150px;
+	height: 130px;
+	width:130px;
+	background-image: url(../img/face2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index:200;
+}
+
+.icon1{
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:140px;
+	height: 130px;
+	width:250px;
+	background-image: url(../img/text1.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	z-index:270;
+	
+}
+
+.icon2{
+	margin-left:140px;
+	height: 130px;
+	width:250px;
+	background-image: url(../img/text4.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	
+}
+
+.teg5 p{
+	color: #f0b22e;
+	margin-left:50px;
+	}
+
+.teg5{
+	height:120px;
+}
+.btn12{
+	margin-top:50px;
+}
+.btn10{	
+	text-align:center;
+}
+
+	
+
