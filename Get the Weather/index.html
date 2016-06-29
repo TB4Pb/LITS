@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="weather.css">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <script type="text/javascript">
+
+   $(document).ready(function () {
+     var array = []
+     var resultElement = $('#resultDiv');
+
+	  $('#btnSearch').click(function () {
+       var requestData = $('#txtCity').val();
+
+			 $.ajax({
+         url: 'http://api.openweathermap.org/data/2.5/weather?apikey=2b4cfe6d237ead4d6d2d96d1fe8f2af1&units=metric',
+         method: 'get',
+         data: { q: requestData },
+         dataType: 'json',
+
+				 success: function (data) {
+           if (data.message != null) {
+             array.push(data)
+               var element = document.createElement('div')
+               element.innerHTML += (' - ') + (data.name) + (', ') + data.sys.country + (':') + ( data.main.temp.toFixed(1) + ' C,' ) + ( ' ' + "<span class='specialcharacters'>"+ data.weather[0].description +  "</span>") + "<br>"
+               resultElement.append(element)
+           }
+           else {
+             array.push(data)
+               var element = document.createElement('div')
+               element.innerHTML += (' - ') + (data.name) + (', ') + data.sys.country + (':') + ( data.main.temp.toFixed(1) + '°C,' ) + ( ' ' + "<span class='specialcharacters'>"+ data.weather[0].description +  "</span>") + "<br>"
+               resultElement.append(element)
+           }
+         },
+         error: function (err) {
+           alert(err);
+         }
+       });
+     });
+     $('#btnClear').click(function(){
+       array = []
+      resultElement.empty()
+     })
+   });
+</script>
+</head>
+<body>
+ <section class="container">
+    <h1>Get the wetaher!</h1>
+     <div class="content">
+        <form>
+                <span><input type="text" id="txtCity" class="search square"><input type="button" id="btnSearch" value="Search"></span>
+    </form>
+  </div>
+ </section>
+ <section>
+		  <div id="resultDiv"></div>
+		  <div id="btnReset">
+		   		<input type="reset" id="btnClear" value="Clear" align="center">
+		  </div>
+	</section>
+</body>
+</html>
