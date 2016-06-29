@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url(../fonts/PTSans.eot);
+  src: local(PTSans), url(../fonts/PTSans.ttf);
+}
+/* line 12, ../sass/screen.scss */
+html {
+  background-color: #000000;
+}
+
+/* line 16, ../sass/screen.scss */
+#wrapper {
+  background-color: #000000;
+  background-image: url(../img/layer1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 27, ../sass/screen.scss */
+p {
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 16px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 22px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 37, ../sass/screen.scss */
+#wrapper {
+  height: 380px;
+  margin: 0 auto;
+}
+
+/* line 42, ../sass/screen.scss */
+.img-main {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 126px;
+}
+
+/* line 49, ../sass/screen.scss */
+h1 {
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 32px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 60, ../sass/screen.scss */
+.button_center {
+  text-align: center;
+  margin-top: 55px;
+}
+
+/* line 65, ../sass/screen.scss */
+a.button7 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: PTSans;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 2.4em calc(.8em + 3px);
+  border-radius: 4px;
+  border: 1px solid #1d87b1;
+  background: #26a8db;
+  box-shadow: 0 -3px #1d87b1 inset;
+  transition: 0.2s;
+}
+
+/* line 78, ../sass/screen.scss */
+a.button7:hover {
+  background: #2198c7;
+}
+
+/* line 79, ../sass/screen.scss */
+a.button7:active {
+  background: #2198c7;
+  box-shadow: 0 3px #1d87b1 inset;
+}
+
+/* line 84, ../sass/screen.scss */
+.middle_content {
+  height: 348px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* line 92, ../sass/screen.scss */
+.text {
+  position: absolute;
+  height: 348px;
+  width: 530px;
+  float: left;
+  z-index: 10;
+}
+
+/* line 100, ../sass/screen.scss */
+.text p {
+  margin-top: 163px;
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 32px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+  margin-bottom: 31px;
+}
+
+/* line 111, ../sass/screen.scss */
+.text span {
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 16px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+}
+
+/* line 120, ../sass/screen.scss */
+.image1 {
+  width: 60%;
+  height: 348px;
+  background-image: url(../img/pic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+/* line 130, ../sass/screen.scss */
+.middle_content2 {
+  height: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* line 139, ../sass/screen.scss */
+.text2 {
+  margin-right: 10px;
+  margin-top: 150px;
+  height: 348px;
+  width: 50%;
+  float: right;
+  z-index: 20;
+}
+
+/* line 149, ../sass/screen.scss */
+.text2 p {
+  margin-bottom: 30px;
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 32px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+}
+
+/* line 159, ../sass/screen.scss */
+.text2 span {
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 16px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+}
+
+/* line 169, ../sass/screen.scss */
+.image2 {
+  right: 650px;
+  width: 50%;
+  height: 348px;
+  background-image: url(../img/pic23.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  position: absolute;
+}
+
+/* line 181, ../sass/screen.scss */
+.bottom {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 260px;
+}
+
+/* line 189, ../sass/screen.scss */
+.text3 {
+  height: 348px;
+  width: 50%;
+  float: left;
+  position: absolute;
+  z-index: 20;
+}
+
+/* line 198, ../sass/screen.scss */
+.text3 p {
+  margin-bottom: 30px;
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 32px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+}
+
+/* line 208, ../sass/screen.scss */
+.text3 span {
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 16px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 24px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+}
+
+/* line 217, ../sass/screen.scss */
+.image3 {
+  width: 85%;
+  height: 650px;
+  background-image: url(../img/pic3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 60;
+  bottom: 280px;
+  left: 100px;
+}
+
+/* line 229, ../sass/screen.scss */
+.down {
+  margin: 0 auto;
+  height: 350px;
+  background-color: #000000;
+  background-image: url(../img/layer3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 100;
+}
+
+/* line 242, ../sass/screen.scss */
+.down p {
+  padding-top: 140px;
+  padding-bottom: 15px;
+  font-family: PTSans;
+  color: #ffffff;
+  font-size: 32px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 34px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: center;
+  position: iherit;
+  z-index: 100;
+}

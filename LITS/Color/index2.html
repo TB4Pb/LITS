@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    <style>
+       div#game_board{
+           background: #DDD;
+           border: #999 1px solid;
+           width: 370px;
+           height: 370px;
+           padding: 24px;
+           margin: 0px auto;
+       }
+       div#game_board > div{
+           background: url(react.jpg) no-repeat;
+           border: #FF0000  2px solid;
+           border-radius: 10%;
+           border-style: groove;
+           width: 68px;
+           height: 68px;
+           float: left;
+           margin: 10px;
+           font-size: 64px;
+           cursor: pointer;
+           text-align: center;
+       }
+
+     </style>
+     <script>
+             var game_array = ['blue','blue','red','red','green','green','black','black','white','white','yellow','yellow','pink','pink','brown','brown'];
+             var game_values = [];
+             var game_tile_ids = [];
+             var tiles_flipped = 0;
+             var timearray = []
+
+                       Array.prototype.game_tile_shuffle = function(){
+                       var i = this.length, j, temp;
+                       while(--i > 0){
+                           j = Math.floor(Math.random() * (i+1));
+                           temp = this[j];
+                           this[j] = this[i];
+                           this[i] = temp;
+                       }
+                   }
+                 function newBoard(){
+                       tiles_flipped = 0;
+                       var output = '';
+                       game_array.game_tile_shuffle();
+                       for(var i = 0; i < game_array.length; i++){
+                           output += '<div id="tile_'+i+'" onclick="gameFlipTile(this,\''+game_array[i]+'\')"></div>'
+                       }
+                       document.getElementById('game_board').innerHTML = output;
+                   };
+
+                 function gameFlipTile(tile,val,game_array){
+                     if(tile.innerHTML === "" && game_values.length < 2){
+                         tile.style.background = val;
+
+                         if(game_values.length === 0){
+                             game_values.push(val);
+                             game_tile_ids.push(tile.id);
+                         } else if(game_values.length === 1){
+                             game_values.push(val);
+                             game_tile_ids.push(tile.id);
+                             if(game_values[0] === game_values[1]){
+                                 tiles_flipped += 2;
+                                 game_values = [];
+                                 game_tile_ids = [];
+                                 if(tiles_flipped === window.game_array.length){
+                           console.log(tiles_flipped)
+                                     alert("Вы прошли игру... Нажмите ОК чтобы начать заново!" );
+                                     document.getElementById('game_board').innerHTML = "";
+                                     newBoard();
+                                 }
+                             } else {
+                                 function flip2Back(){
+                                     var tile_1 = document.getElementById(game_tile_ids[0]);
+                                     var tile_2 = document.getElementById(game_tile_ids[1]);
+                                     tile_1.style.background = 'url(react.jpg) no-repeat';
+                                     tile_1.innerHTML = "";
+                                     tile_2.style.background = 'url(react.jpg) no-repeat';
+                                     tile_2.innerHTML = "";
+                                     game_values = [];
+                                     game_tile_ids = [];
+                                 }
+                                 setTimeout(flip2Back, 300);
+                             }
+                         }
+                     }
+                 }
+    </script>
+</head>
+<body>
+   <div id="game_board"></div>
+   <script>newBoard();</script>
+</body>
+</html>
